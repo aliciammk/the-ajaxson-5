@@ -20,6 +20,17 @@ function fetchAndDisplayGif(event) {
     
     // get the user's input text from the DOM
     var searchQuery = $("input[name='tag']").val(); // TODO should be e.g. "dance"
+    var numJacksons = $("input[name='validation']").val(); // get user input for validation
+    var errorMsg = "";
+
+    // check for user input and proper validation
+    if ((numJacksons != 5) || (searchQuery == "")){
+        errorMsg = "No gifs for you!"
+        $("#feedback").text(errorMsg);
+        setGifLoadedStatus(false);
+        return;
+
+    }
 
     // configure a few parameters to attach to our request
     var params = { 
