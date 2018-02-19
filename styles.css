@@ -9,7 +9,7 @@ h1 {
     text-align: center;
     background-color: #f2f4f4;
     padding: 40px;
-    margin-bottom: -10px;
+    margin: -10px;
 
 }
 
@@ -20,9 +20,9 @@ h1 {
 }
 
 #question {
-    font-family: 'Muli', sans-serif;
-    color: #283747;
-
+    font-family: sans-serif;
+    color:  #515a5a;
+    font-size: 14px;
 }
 
 div {
@@ -48,7 +48,15 @@ div {
     padding: 20px;
     margin: 20px;
     border: .25px solid #d6dbdf;
-    border-radius: 5px;
+    border-radius: 3px;
+}
+
+#subsection {
+    border: .25px solid #d6dbdf;
+    border-radius: 3px;
+    background-color:#ebedef;
+    margin-top: 5px;
+
 }
 
 #button {
@@ -66,3 +74,52 @@ hr {
 #gif {
     margin: auto;
 }
+
+input[type=text][name=tag] {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    padding: 7px;
+    margin-top: 5px;
+    border: 1px solid #DDDDDD;
+    width: 97%;
+    font-size: 12px;
+    color:  #5d6d7e;
+    border-radius: 3px;
+}
+
+input[type=text][name=validation] {
+    -webkit-transition: all 0.30s ease-in-out;
+    -moz-transition: all 0.30s ease-in-out;
+    -ms-transition: all 0.30s ease-in-out;
+    -o-transition: all 0.30s ease-in-out;
+    outline: none;
+    padding: 7px;
+    border: 1px solid white;
+    border-right: 1px solid #DDDDDD;
+    width: 40%;
+    font-size: 12px;
+    color:  #5d6d7e;
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+    border-bottom-right-radius: 0px;
+    border-top-right-radius: 0px;
+}
+
+input[type=text]:focus {
+    box-shadow: 0 0 2.5px #85c1e9;
+    padding: 7px;
+    border: 1px solid  #7fb3d5;
+}
+
+input[type=submit] {
+    color: white;
+    font-size: 14px;
+    padding:8px 12px; 
+    background: #2980b9; 
+    border: .5px solid  #1f618d;
+    border-radius: 3px; 
+}
+
